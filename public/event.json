@@ -1,0 +1,46 @@
+ [
+      {
+        "id": 1,
+        "name": "Weddings",
+        "image": "https://i.ibb.co/FzKDH2R/weeding.jpg",
+        "price": "$5000",
+        "short_description": "Celebrate your special day with our exquisite wedding planning services."
+      },
+      {
+        "id": 2,
+        "name": "Birthday Parties",
+        "image": "https://i.ibb.co/m9LHTRd/birthday.jpg",
+        "price": "$4000",
+        "short_description": "Plan a memorable birthday party with our fun and creative party planning options."
+      },
+      {
+        "id": 3,
+        "name": "Anniversaries",
+        "image": "https://i.ibb.co/G0SY8Nx/anniversary.jpg",
+        "price": "$7000",
+        "short_description": "Make your anniversary unforgettable with our romantic anniversary planning services."
+      },
+      {
+        "id": 4,
+        "name": "Engagement Parties",
+        "image": "https://i.ibb.co/SxrkScC/engagement.jpg",
+        "price": "$8000",
+        "short_description": "Celebrate your engagement with a stylish and elegant engagement party."
+      },
+      {
+        "id": 5,
+        "name": "Retirement Parties",
+        "image": "https://i.ibb.co/kx9WZdW/reternment.jpg",
+        "price": "$6000",
+        "short_description": "Honor the retiree with a memorable retirement party filled with joy and nostalgia."
+      },
+      {
+        "id": 6,
+        "name": "Baby Shower",
+        "image": "https://i.ibb.co/WGtKHyr/babyshower.jpg",
+        "price": "$3000",
+        "short_description": "Welcome the arrival of a new baby with a heartwarming baby shower celebration."
+      }
+    ]
+  
+  
