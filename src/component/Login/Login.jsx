@@ -1,13 +1,22 @@
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import React, { useContext, useState }  from 'react';
 import auth from '../../Firebase/firebase.config';
 import { FaEye, FaEyeSlash} from "react-icons/fa";
 import swal from "sweetalert";
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 
 const Login = () => {
     const {signIn} = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+    const provider = new GoogleAuthProvider();
+    const handleGooglSignIN = () => {
+        signInWithPopup(auth, provider)
+        .then()
+        .catch()
+    }
+
     const [registerError, setRegisterError] = useState('');
     const [success, setSuccess] = useState('');
     const [showPassword, setShowPassword] = useState(false);
@@ -36,11 +45,12 @@ const Login = () => {
     setRegisterError('');
     setSuccess();
 
-    signInWithEmailAndPassword(auth, email, password)
+    signIn(email, password)
     .then(result =>{
         console.log(result.user);
         setSuccess();
         swal("Done", "User Login Succesful", "success");
+        navigate(location?.state ? location.state : "/");
     })
     .catch(error => {
         console.error(error);
@@ -53,6 +63,7 @@ const Login = () => {
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form onSubmit={handleLogin} className="card-body">
             <div className="form-control">
+            <h2 className=" text-2xl font-semibold " >Please Login</h2>
               <label className="label">
                 <span className="label-text">Email</span>
               </label>

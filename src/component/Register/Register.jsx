@@ -49,7 +49,9 @@ const Register = () => {
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            
           <form onSubmit={handleRegister} className="card-body">
+          <h2 className=" text-2xl font-semibold " >Please Register</h2>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>

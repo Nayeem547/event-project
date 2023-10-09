@@ -13,7 +13,7 @@ const Home = () => {
     setCarded(getCarded);
   }, []);
     return (
-        <div>
+        <div className=" text-center " >
             <div>
             <BannerSlider></BannerSlider>
             </div>
