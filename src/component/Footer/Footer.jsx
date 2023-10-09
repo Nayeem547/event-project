@@ -4,7 +4,7 @@ import { FaStickyNote,  FaPhone, FaVoicemail, FaClock } from "react-icons/fa";
 const Footer = () => {
     return (
         
-            <footer className=" mt-24 ml-[-152px] mr-[-151px] ">
+            <footer className=" mt-24  ">
             <div className=" bg-[#38132e] flex justify-center flex-col   p-32  ">
         <div className=" mt-[-40px] pb-14 " >
           <h2 className=" text-3xl font-semibold text-white font-mono ">

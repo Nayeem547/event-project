@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const CardRow = ({card}) => {
-    const {name, image, price, short_description} = card || {}
+    const {id,name, image, price, short_description} = card || {}
     
     return (
         <div data-aos="zoom-in-down" >
@@ -15,7 +16,8 @@ const CardRow = ({card}) => {
     <p className=' font-midium italic text-[#701e43] ' >{short_description}</p>
     <p className=' text-xl italic font-semibold ' > Price : {price}</p>
     <div className="card-actions ">
-      <button className="btn bg-[#701e43] rounded-tl-3xl rounded-br-3xl border-none text-white btn-primary">Book Now</button>
+    <Link to={`/detail/${id}`} >
+      <button  className="btn bg-[#701e43] rounded-tl-3xl rounded-br-3xl border-none text-white btn-primary">Book Now</button> </Link>
     </div>
   </div>
 </div>
