@@ -7,7 +7,7 @@ const CardRow = ({card}) => {
     
     return (
         <div data-aos="zoom-in-down" >
-            <div className="card w-96 h-[500px] bg-base-100 shadow-xl">
+            <div className="card   w-64 md:80 lg:w-96 h-[500px] bg-base-100 shadow-xl">
   <figure className="">
     <img src={image} alt="Shoes" className="rounded-xl " />
   </figure>

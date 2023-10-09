@@ -9,14 +9,14 @@ const Planing = () => {
     <div className=" mt-20 ">
       <div>
         <div>
-          <h1 className=" text-4xl font-bold ">
+          <h1 className=" md:text-2xl text-xl lg:text-4xl font-bold ">
             {" "}
-            <span className=" text-yellow-400 text-5xl ">Hello!</span> I Want to
+            <span className=" text-yellow-400 md:text-2xl text-xl lg:text-5xl ">Hello!</span> I Want to
             Plan Your Event
           </h1>
         </div>
 
-        <div className=" mt-16 italic  text-2xl grid grid-cols-4 text-center items-center gap-4 ">
+        <div className=" mt-16 italic  md:text-xl text-md lg:text-2xl grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 text-center items-center gap-4 ">
           <div className=" space-y-4 flex justify-center flex-col items-center">
             <p>
               {" "}
@@ -49,9 +49,9 @@ const Planing = () => {
       </div>
 
       {/* 2nd section start */}
-      <div className=" mt-20 ">
+      <div className=" mt-20   flex justify-center flex-col items-center ">
         <div className=" space-y-5 ">
-          <h1 className="text-5xl font-bold font-sans ">
+          <h1 className=" md:text-2xl text-xl lg:text-5xl font-bold font-sans ">
             Florida Event Planner
           </h1>
           <p className=" text-gray-400 font-bold ">
@@ -59,8 +59,8 @@ const Planing = () => {
           </p>
         </div>
 
-        <div className=" grid grid-cols-4 gap-4 mt-14 ">
-          <div className=" bg-red-600 text-white text-2xl w-58 rounded-md space-y-3 h-60 flex justify-center flex-col items-center ">
+        <div className=" grid items-center text-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-14 ">
+          <div className=" bg-red-600 text-white text-2xl w-48 rounded-md space-y-3 h-60 flex justify-center flex-col items-center ">
             <div className="  ">
               <img className=" w-16 h-16 " src={WedingIcon} alt="" />
             </div>
@@ -68,21 +68,21 @@ const Planing = () => {
             <h2 className="  ">Weedings</h2>
           </div>
 
-          <div className=" bg-yellow-400 text-white text-2xl w-58 rounded-md space-y-3 h-60 flex justify-center flex-col items-center ">
+          <div className=" bg-yellow-400 text-white text-2xl w-48 rounded-md space-y-3 h-60 flex justify-center flex-col items-center ">
             <div className="  ">
               <img className=" w-16 h-16 " src={birthday} alt="" />
             </div>
             <h2>Birthday</h2>
           </div>
 
-          <div className=" bg-pink-500 text-white text-2xl w-58 rounded-md space-y-3 h-60 flex justify-center flex-col items-center ">
+          <div className=" bg-pink-500 text-white text-2xl w-48 rounded-md space-y-3 h-60 flex justify-center flex-col items-center ">
             <div className="  ">
               <img className=" w-16 h-16 " src={aniversry} alt="" />
             </div>
             <h2>Anniversaries</h2>
           </div>
 
-          <div className=" bg-blue-800 text-white text-2xl w-58 rounded-md space-y-3 h-60 flex justify-center flex-col items-center ">
+          <div className=" bg-blue-800 text-white text-2xl w-48 rounded-md space-y-3 h-60 flex justify-center flex-col items-center ">
             <div className="  ">
               <img className=" w-16 h-16 " src={reternment} alt="" />
             </div>

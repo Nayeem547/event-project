@@ -16,11 +16,11 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <nav className="navbar bg-base-100 flex flex-col md:flex-row lg:flex-row justify-center md:justify-between lg:justify-between items-center py-7 mx-auto ">
-        <div className="navbar-start">
+      <nav className="navbar bg-base-100 space-y-7 flex flex-col md:flex-row lg:flex-row justify-center md:justify-between lg:justify-between items-center py-7 mx-auto ">
+        <div className=" navbar-center md:navbar-start lg:navbar-start">
           <img className=" w-[155px] h-20 " src={logo} alt="" />
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center ">
           <ul className=" text-xl font-medium flex mt-5 md:mt-0 lg:mt-0 gap-6 ">
             <li>
               <NavLink
@@ -39,37 +39,37 @@ const Navbar = () => {
 
             <li>
               <NavLink
-                to="/Donation"
+                to="/about"
                 className={({ isActive, isPending }) =>
                   isPending
                     ? "pending"
                     : isActive
-                    ? " text-[#FF444A] underline "
+                    ? "bg-[#701e43] px-3 py-2 text-white rounded-tl-3xl rounded-br-3xl  "
                     : ""
                 }
               >
-                Donation
+                About
               </NavLink>
             </li>
 
             <li>
               <NavLink
-                to="/Statistics"
+                to="/blog"
                 className={({ isActive, isPending }) =>
                   isPending
                     ? "pending"
                     : isActive
-                    ? " text-[#FF444A] underline "
+                    ? " bg-[#701e43] px-3 py-2 text-white rounded-tl-3xl rounded-br-3xl "
                     : ""
                 }
               >
-                Statistics
+                Blog
               </NavLink>
             </li>
           </ul>
         </div>
 
-        <div className="navbar-end gap-2">
+        <div className="  navbar-end gap-2">
           {user ? (
             <button onClick={handleSignOut} className=" btn ">Sign Out</button>
           ) : (

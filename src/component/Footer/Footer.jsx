@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
 
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-white  " >
-          <div className=" flex flex-col text-left space-y-3 " >
+          <div className=" flex flex-col text-center lg:text-left space-y-3 " >
             <h2 className=" text-2xl " >About Events</h2>
 
             <h2>The Events Specialists!</h2>

@@ -6,8 +6,18 @@ import auth from "../../Firebase/firebase.config";
 import swal from "sweetalert";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const Register = () => {
+
+    const provider = new GoogleAuthProvider();
+
+    const handleGooglSignIN = () => {
+        signInWithPopup(auth, provider)
+        .then()
+        .catch()
+    }
+
 
     const {createUser} = useContext(AuthContext);
     
@@ -88,8 +98,9 @@ const Register = () => {
                 </a>
               </label>
             </div>
-            <div className="form-control mt-6">
+            <div className="form-control space-y-3 mt-6">
               <button className="btn btn-primary">Register</button>
+              <button className='btn btn-primary' onClick={handleGooglSignIN} > Google</button>
             </div>
           </form>
          {

@@ -99,9 +99,11 @@ const Login = () => {
                 </a>
               </label>
             </div>
-            <div className="form-control mt-6">
-              <button className="btn btn-primary">Register</button>
+            <div className="form-control space-y-3 mt-6">
+              <button className="btn btn-primary">Login</button>
+              <button className='btn btn-primary' onClick={handleGooglSignIN} > Google</button>
             </div>
+            
           </form>
          {
             registerError && <p className="w-64 pl-4 pr-4 pb-2 text-[#fc032c] text-sm italic  " >{registerError}</p>

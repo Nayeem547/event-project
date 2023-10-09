@@ -13,14 +13,14 @@ const Home = () => {
     setCarded(getCarded);
   }, []);
     return (
-        <div className=" text-center " >
+        <div className=" text-center items-center " >
             <div>
             <BannerSlider></BannerSlider>
             </div>
-           <div>
+           <div className=" flex justify-center flex-col " >
             <Cardmap carded={carded} ></Cardmap>
            </div>
-           <div>
+           <div >
             <Planing></Planing>
            </div>
            <footer>
